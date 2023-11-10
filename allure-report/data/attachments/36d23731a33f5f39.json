@@ -1,0 +1,29 @@
+{
+  "data": {
+    "id": 191,
+    "candidate": {
+      "id": 52,
+      "firstName": "hassan",
+      "middleName": "jamal",
+      "lastName": "rjoub"
+    },
+    "vacancy": {
+      "id": 36,
+      "name": "Music Producer",
+      "hiringManager": {
+        "empNumber": 103,
+        "firstName": "mohammad",
+        "middleName": "jamal",
+        "lastName": "rjoub",
+        "terminationId": null
+      }
+    },
+    "note": null,
+    "action": {
+      "id": 2,
+      "label": "Shortlisted"
+    }
+  },
+  "meta": [],
+  "rels": []
+}
