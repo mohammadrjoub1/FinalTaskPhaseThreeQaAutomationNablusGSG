@@ -1,4 +1,4 @@
-Feature: Login Feature
+Feature: Verify that the user can upload a txt file for Application Initiated and Hired statuses
    I Want To Login To Site
    #every Scenario represent an it
    #given represent the beforeEach
