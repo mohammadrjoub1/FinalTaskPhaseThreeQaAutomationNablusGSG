@@ -1,14 +1,14 @@
 export class CandidatePage {
   static candidatePass() {
     cy.get(".oxd-sidepanel").contains(".oxd-main-menu-item--name", "Recruitment").click();
-    cy.get(".orangehrm-container").contains('[role="cell"]', "hassan jamal rjoub").parent().find(".bi-eye-fill").click();
+    cy.get(".orangehrm-container").contains('[role="cell"]', "hassan jamal rjoub").parent().find(".bi-eye-fill").click({ force: true });
     cy.get(".oxd-button--success").click({ force: true });
     cy.get(".oxd-button--secondary").click();
   }
   static candidateFail() {
     cy.get(".oxd-sidepanel").contains(".oxd-main-menu-item--name", "Recruitment").click();
-    cy.get(".orangehrm-container").contains('[role="cell"]', "hassan jamal rjoub").parent().find(".bi-eye-fill").click();
-    cy.get(".orangehrm-recruitment-actions > :nth-child(2)").click( {force: true} );
+    cy.get(".orangehrm-container").contains('[role="cell"]', "hassan jamal rjoub").parent().find(".bi-eye-fill").click({ force: true });
+    cy.get(".orangehrm-recruitment-actions > :nth-child(2)").click({ force: true });
     cy.get(".oxd-button--secondary").click();
   }
   static candidateAssertion(status) {

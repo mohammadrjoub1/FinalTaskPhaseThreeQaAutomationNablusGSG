@@ -1,3 +1,3 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Fri Nov 10 05:53:24 EET 2023","Fri Nov 10 05:53:43 EET 2023","19657","","candidateInterviewResultVerification","","","","Candidate Interview Result Verification Failed State",""
-"passed","Fri Nov 10 05:52:53 EET 2023","Fri Nov 10 05:53:22 EET 2023","29015","","candidateInterviewResultVerification","","","","Candidate Interview Result Verification Pass State",""
+"passed","Sat Nov 11 10:48:25 EET 2023","Sat Nov 11 10:48:51 EET 2023","25353","","candidateInterviewResultVerification","","","","Candidate Interview Result Verification Failed State",""
+"passed","Sat Nov 11 10:47:34 EET 2023","Sat Nov 11 10:48:23 EET 2023","49196","","candidateInterviewResultVerification","","","","Candidate Interview Result Verification Pass State",""
