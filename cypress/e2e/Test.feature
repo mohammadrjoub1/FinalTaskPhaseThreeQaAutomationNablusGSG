@@ -3,15 +3,15 @@ Feature: Verify that the user can upload a txt file for Application Initiated an
    #every Scenario represent an it
    #given represent the beforeEach
 
-   Scenario: Login With Valid username and password
+   Scenario: Verify that the user can upload a txt file for Application Initiated status
       Given Visit the home page
      # When I Login with Valid password and username
      #  Then I should see Dashboard
 
 
 
-   Scenario: Login With inValid username and password
-      Given Visit the home page
+  # Scenario: Verify that the user can upload a txt file for Application Hired status  
+      #Given Visit the home page
      # When I Login with InValid password and username
      # Then I should see Invalid credentials
 
