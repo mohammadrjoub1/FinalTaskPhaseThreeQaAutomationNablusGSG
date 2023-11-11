@@ -9,6 +9,7 @@ Given("Create Employee Create Job Title Create Vacancy Create Candidate With App
 });
 afterEach("", () => {
   cy.log("Deleting all data we made in the Given");
+  
   Delete.deleteAll();
 });
 // When("", () => {});
