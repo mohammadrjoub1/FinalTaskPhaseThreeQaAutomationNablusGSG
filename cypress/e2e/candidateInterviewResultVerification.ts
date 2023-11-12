@@ -9,7 +9,7 @@ Given("Create Employee , Create Job Title ,Create ,Vacancy ,Create Candidate Wit
   PrepareData.prepareData();
   cy.logOut();
 });
-//this is equal to it("I Login As Admin , And Access the candidate form And Change the candidate status to Interview Passed")
+//this is equal  to it("I Login As Admin , And Access the candidate form And Change the candidate status to Interview Passed")
 When("I Login As Admin , And Access the candidate form And Change the candidate status to Interview Passed", () => {
   cy.login("Admin", "admin123");
   CandidatePage.candidatePass();
