@@ -14,8 +14,8 @@ Given("Create Employee Create Job Title Create Vacancy Create Candidate With App
 });
 When("Login as Admin ,AND Access candidate form in Application Initiated state,AND Enable Edit candidate switch ,AND Upload a txt file to the Resume section ,AND Save the form", () => {
   cy.visit("/recruitment/viewCandidates");
-  // CandidatePage.uploadFile();
-  // CandidatePage.downloadFile();
+  CandidatePage.uploadFile();
+  CandidatePage.downloadFile();
 });
 
 Given("Create Employee Create Job Title Create Vacancy Create Candidate With Application Hired State", () => {
@@ -24,9 +24,9 @@ Given("Create Employee Create Job Title Create Vacancy Create Candidate With App
 });
 When("Login as Admin ,AND Access candidate form in Hired state,AND Enable Edit candidate switch ,AND Upload a txt file to the Resume section ,AND Save the form", () => {
   cy.visit("/recruitment/viewCandidates");
-  // CandidatePage.uploadFile();
-  // CandidatePage.downloadFile();
+  CandidatePage.uploadFile();
+  CandidatePage.downloadFile();
 });
 Then("I should see that the content of the file is the same as the upload it one", () => {
-  // CandidatePage.readFile();
+  CandidatePage.readFile();
 });

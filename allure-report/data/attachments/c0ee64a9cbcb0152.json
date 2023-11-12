@@ -1,0 +1,32 @@
+{
+  "data": {
+    "id": 19,
+    "name": "Music Producer Director",
+    "candidate": {
+      "id": 52,
+      "firstName": "hassan",
+      "middleName": "jamal",
+      "lastName": "rjoub"
+    },
+    "vacancy": {
+      "id": 36,
+      "name": "Music Producer"
+    },
+    "interviewers": [
+      {
+        "empNumber": 93,
+        "lastName": "rjoub",
+        "firstName": "mohammad",
+        "middleName": "jamal",
+        "terminationId": null
+      }
+    ],
+    "interviewDate": "2023-11-10",
+    "interviewTime": "13:00",
+    "note": "Music Producer Director"
+  },
+  "meta": {
+    "historyId": 197
+  },
+  "rels": []
+}
