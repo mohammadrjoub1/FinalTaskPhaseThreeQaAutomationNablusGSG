@@ -15,4 +15,6 @@ afterEach("", () => {
 });
 When("I Login as an Admin ,AND Access the candidate form ,AND Enable Edit candidate switch ,AND Upload a txt file to the Resume section ,AND Save the form. Download the uploaded file", () => {
   CandidatePage.uploadFile();
+  CandidatePage.downloadFile();
+  CandidatePage.readFile();
 });

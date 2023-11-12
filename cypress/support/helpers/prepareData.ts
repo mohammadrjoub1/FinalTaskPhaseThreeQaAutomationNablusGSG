@@ -21,7 +21,7 @@ export class PrepareData {
     cy.fixture("candidate").then((data) => {
       cy.get("@employeeNumber").then((employeeNumber) => {
         cy.get("@vacancyId").then((vacancyId) => {
-          Candidate.createInterviewScheduledCandidate(data.firstName, data.middleName, data.lastName, data.email, data.dateOfApplication, vacancyId, data.interviewName, data.interviewDate, data.interviewTime, data.note, employeeNumber);
+          Candidate.createCandidateInitiatedState(data.firstName, data.middleName, data.lastName, data.email, data.dateOfApplication, vacancyId);
         });
       });
     });
