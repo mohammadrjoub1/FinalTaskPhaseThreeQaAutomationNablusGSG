@@ -7,7 +7,7 @@ afterEach("", () => {
   Delete.deleteAll();
 });
 
-//this is beforeEach
+//this is  beforeEach
 Given("Create Employee Create Job Title Create Vacancy Create Candidate With Application Initiated State", () => {
   cy.login("Admin", "admin123");
   PrepareData.prepareData("Initiated");
