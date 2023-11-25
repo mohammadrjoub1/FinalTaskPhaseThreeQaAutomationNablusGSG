@@ -92,4 +92,33 @@ export class Candidate {
       });
     });
   }
+
+  static createCandidate(state) {
+    if (state === "Hired") {
+      cy.log("Creating   Hired candidate");
+      cy.fixture("candidate").then((data) => {
+        cy.get("@employeeNumber").then((employeeNumber) => {
+          cy.get("@vacancyId").then((vacancyId) => {
+            Candidate.createCandidatehireState(data.firstName, data.middleName, data.lastName, data.email, data.dateOfApplication, vacancyId, data.interviewName, data.interviewDate, data.interviewTime, data.note, employeeNumber);
+          });
+        });
+      });
+      Candidate.candidateStatus("Hired");
+    } else {
+      cy.log("Creating Initiated candidate");
+
+      cy.fixture("candidate").then((data) => {
+        cy.get("@employeeNumber").then((employeeNumber) => {
+          cy.get("@vacancyId").then((vacancyId) => {
+            Candidate.createCandidateInitiatedState(data.firstName, data.middleName, data.lastName, data.email, data.dateOfApplication, vacancyId);
+          });
+        });
+      });
+      Candidate.candidateStatus("Application Initiated");
+    }
+  }
+  static candidateStatus(state) {
+    cy.visit("/recruitment/viewCandidates");
+    cy.get(".orangehrm-container").contains("div", "hassan jamal rjoub").parent().parent().contains("div", `${state}`);
+  }
 }
